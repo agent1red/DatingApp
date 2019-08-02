@@ -24,7 +24,7 @@ namespace DatingApp.API.Controllers
         }
         // GET api/values async request method - 
         //Task<> means keep thread open when we are waiting for data
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
